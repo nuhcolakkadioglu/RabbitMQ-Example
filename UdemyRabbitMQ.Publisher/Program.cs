@@ -9,9 +9,9 @@ namespace UdemyRabbitMQ.Publisher
     {
         static void Main(string[] args)
         {
-            //rabbitmq yönetim https://api.cloudamqp.com/console/53c5705f-ce59-4fa1-8cd4-690b2c0f72da/details
+            //rabbitmq yöneti
             var factory = new ConnectionFactory();
-            factory.Uri = new Uri("amqps://thziwrmr:sleeDqUl2lx_aIctsXttQFL3u5nXNzAe@jaguar.rmq.cloudamqp.com/thziwrmr");
+            factory.Uri = new Uri("rabbitmqurl.com");
             using var connection = factory.CreateConnection();
 
             var channel = connection.CreateModel();
