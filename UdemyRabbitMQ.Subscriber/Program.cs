@@ -12,7 +12,7 @@ namespace UdemyRabbitMQ.Subscriber
         {
 
             var factory = new ConnectionFactory();
-            factory.Uri = new Uri("amqps://thziwrmr:sleeDqUl2lx_aIctsXttQFL3u5nXNzAe@jaguar.rmq.cloudamqp.com/thziwrmr");
+            factory.Uri = new Uri("rabbitmqurl.com");
             using var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
             var randomQueuName = channel.QueueDeclare().QueueName;
